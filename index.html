@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Welcome to BEASystemCTC</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: url('assets/Business card back ground.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background-color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo-title {
+      display: flex;
+      align-items: center;
+      color: #01552a;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .logo-title img {
+      width: 50px;
+      margin-right: 10px;
+    }
+
+    nav a {
+      margin-left: 1.5rem;
+      color: #01552a;
+      text-decoration: none;
+      font-weight: 600;
+      position: relative;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #006f3c;
+    }
+
+    nav a::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 2px;
+      bottom: -4px;
+      left: 0;
+      background-color: #01552a;
+      transform-origin: bottom right;
+      transition: transform 0.25s ease-out;
+    }
+
+    nav a:hover::after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
+
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex: 1;
+      padding: 3rem 2rem;
+    }
+
+    .hero-text {
+      max-width: 50%;
+    }
+
+    .hero-text h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+
+    .hero-text p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      color: #e0e0e0;
+    }
+
+    .btn {
+      background: white;
+      color: #01552a;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      display: inline-block;
+    }
+
+    .btn:hover {
+      background-color: #d6f5e3;
+      color: #004d26;
+      transform: scale(1.05);
+    }
+
+    .hero-image img {
+      max-width: 300px;
+      height: auto;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero-text, .hero-image {
+        max-width: 100%;
+      }
+
+      .hero-text h1 {
+        font-size: 2.25rem;
+      }
+
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    footer {
+      background-color: #e6f4ec;
+      color: #004d26;
+      text-align: center;
+      padding: 10px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo-title">
+      <img src="assets/logo.png" alt="BEASystemCTC Logo">
+      BEASystemCTC
+    </div>
+    <nav>
+      <a href="Home.html">Home</a>
+      <a href="MeetTheTeam.html">Meet the Team</a>
+      <a href="ProjectPortfolio.html">Projects</a>
+      <a href="ContactUs.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Welcome to BEASystemCTC</h1>
+      <p>Building sustainable solutions from agri and industrial innovation.</p>
+      <a href="https://drive.google.com/file/d/1wM8ZszE556EctKd7gbaBdG4kwF-VajJ5/view?usp=drive_link" class="btn" target="_blank">
+        Download Company Profile
+      </a>
+    </div>
+    <div class="hero-image">
+      <!-- You can insert an image here later -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 BEASystemCTC — All rights reserved.</p>
+  </footer>
+</body>
+</html>
