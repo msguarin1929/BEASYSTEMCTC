@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Project Portfolio - BEASystemCTC</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .slide-img {
+      width: 100%;
+      height: 12rem;
+      object-fit: cover;
+      margin-bottom: 1rem;
+      transition: opacity 0.5s ease-in-out;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #01552a;
+      font-weight: 600;
+      position: relative;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #006f3c;
+    }
+
+    nav a::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 2px;
+      bottom: -4px;
+      left: 0;
+      background-color: #01552a;
+      transform-origin: bottom right;
+      transition: transform 0.25s ease-out;
+    }
+
+    nav a:hover::after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
+  </style>
+</head>
+<body class="bg-green-50 min-h-screen">
+  <!-- Header -->
+  <header class="flex justify-between items-center p-4 bg-white shadow">
+    <div class="flex items-center">
+      <img src="assets/logo.png" alt="BEASystemCTC Logo" class="w-16 h-auto mr-4" />
+      <h1 class="text-2xl font-bold text-green-800">BEASystemCTC</h1>
+    </div>
+    <nav style="text-align: center; padding: 1em; background-color: #e6f4ea; font-family: Arial, sans-serif;">
+      <a href="Index.html">Welcome</a>
+      <a href="Home.html">Home</a>
+      <a href="MeetTheTeam.html">Meet the Team</a>
+      <a href="ContactUs.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="p-6">
+    <header class="text-center mb-10">
+      <h1 class="text-3xl font-bold text-green-800">Project Portfolio</h1>
+      <p class="text-gray-700 mt-2">
+        A showcase of select projects that highlight our expertise and impact across civil engineering, architecture, construction, and sustainable infrastructure.
+      </p>
+    </header>
+
+    <section class="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+      <!-- Biogas -->
+      <div class="bg-white rounded-lg shadow-md p-4">
+        <img id="biogas-slide" src="assets/biogas1.png" class="slide-img" alt="biogas slideshow">
+        <h2 class="text-xl font-semibold text-green-700">Biogas</h2>
+        <p class="text-gray-600 text-sm mb-2">
+          Pictures during biogas system construction showcasing various stages of the project execution and structural elements. 
+        </p>
+      </div>
+
+      <!-- Piggery -->
+      <div class="bg-white rounded-lg shadow-md p-4">
+        <img id="piggery-slide" src="assets/piggery1.png" class="slide-img" alt="piggery slideshow">
+        <h2 class="text-xl font-semibold text-green-700">Piggery</h2>
+        <p class="text-gray-600 text-sm mb-2">
+          Documentation of construction work for various piggery and poultry structures from different projects across the Philippines.
+        </p>
+      </div>
+
+      <!-- Building -->
+      <div class="bg-white rounded-lg shadow-md p-4">
+        <img id="building-slide" src="assets/building1.png" class="slide-img" alt="building slideshow">
+        <h2 class="text-xl font-semibold text-green-700">Building</h2>
+        <p class="text-gray-600 text-sm mb-2">
+          Completed and ongoing building design and construction work both locally and abroad, including retail, residential, commercial, and institutional structures.
+        </p>
+      </div>
+
+      <!-- Automation -->
+      <div class="bg-white rounded-lg shadow-md p-4">
+        <img id="automation-slide" src="assets/automation1.png" class="slide-img" alt="automation slideshow">
+        <h2 class="text-xl font-semibold text-green-700">Industrial Plants & Automation</h2>
+        <p class="text-gray-600 text-sm mb-2">
+          Completed engineering jobs involving power plant automation and the installation of sophisticated control systems for industrial facilities.
+        </p>
+      </div>
+
+      <!-- Trading -->
+      <div class="bg-white rounded-lg shadow-md p-4">
+        <img id="trading-slide" src="assets/trading1.png" class="slide-img" alt="trading slideshow">
+        <h2 class="text-xl font-semibold text-green-700">Trading</h2>
+        <p class="text-gray-600 text-sm mb-2">
+          Various images showing the company's trading portfolio—from raw material inspection and storage to warehouse logistics and international partnerships.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Slideshow Script -->
+  <script>
+    const categories = ["biogas", "piggery", "building", "automation", "trading"];
+    const maxSlides = 4;
+
+    categories.forEach(cat => {
+      let idx = 1;
+      setInterval(() => {
+        idx = (idx % maxSlides) + 1;
+        const img = document.getElementById(`${cat}-slide`);
+        if (img) img.src = `assets/${cat}${idx}.png`;
+      }, 5000);
+    });
+  </script>
+
+  <!-- Footer -->
+  <footer style="background-color: #e6f4ec; color: #004d26; text-align: center; padding: 20px 10px; font-size: 14px; margin-top: 40px;">
+    <p>&copy; 2025 BEASystemCTC — All rights reserved.</p>
+  </footer>
+</body>
+</html>

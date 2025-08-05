@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BEASystemCTC | Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background-color: #f0fdf4;
+      color: #1b4332;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 2rem;
+      background-color: #ffffff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo-section {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-section img {
+      height: 60px;
+      margin-right: 1rem;
+    }
+
+    .logo-section h1 {
+      color: #01552a;
+      font-size: 1.75rem;
+      font-weight: bold;
+    }
+
+    nav a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: #01552a;
+      font-weight: 600;
+      position: relative;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #006f3c;
+    }
+
+    nav a::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 2px;
+      bottom: -4px;
+      left: 0;
+      background-color: #01552a;
+      transform-origin: bottom right;
+      transition: transform 0.25s ease-out;
+    }
+
+    nav a:hover::after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem;
+      background-color: #d1fae5;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: #065f46;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #333;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    section {
+      padding: 3rem 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #065f46;
+    }
+
+    section p {
+      color: #333;
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+
+    footer {
+      background-color: #e6f4ec;
+      color: #004d26;
+      text-align: center;
+      padding: 20px 10px;
+      font-size: 14px;
+      margin-top: auto;
+    }
+
+    @media (max-width: 768px) {
+      .logo-section h1 {
+        font-size: 1.25rem;
+      }
+
+      nav {
+        text-align: center;
+        margin-top: 1rem;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 0 10px;
+      }
+
+      .hero h2 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo-section">
+      <img src="assets/logo.png" alt="BEASystemCTC Logo" />
+      <h1>BEASystemCTC</h1>
+    </div>
+    <nav>
+      <a href="Index.html">Welcome</a>
+      <a href="MeetTheTeam.html">Meet the Team</a>
+      <a href="ProjectPortfolio.html">Projects</a>
+      <a href="ContactUs.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Building the Future, Designing with Purpose</h2>
+    <p>
+      BEASystemCTC delivers architectural and engineering services with a
+      commitment to excellence, sustainability, and innovation across the Philippines.
+    </p>
+  </section>
+
+  <!-- About Section -->
+  <section>
+    <h2>Our Expertise</h2>
+    <p>
+      We are a team of industry experts specializing in Civil Engineering, Architecture, Construction,
+      and Plant Maintenance in Automation and Safety. Aside from our well-structured construction group,
+      our experienced technical team covers Instrumentation and Control (I&C) installation, commissioning,
+      and maintenance, as well as HVAC installation, commissioning, and maintenance.
+    </p>
+    <p>
+      We are well-versed in work scopes that involve precise setup of instrumentation and control systems,
+      rigorous testing to verify proper functionality of control loops. We can assess and set up new or existing
+      plant maintenance, and execute both preventive and corrective maintenance to ensure optimal performance and safety.
+      Our team is highly familiar with SAP applications and systems.
+    </p>
+    <p>
+      Leveraging advanced technologies, we have the skills and expertise to ensure that all processes run
+      to their optimum designed function—minimizing downtime and maximizing productivity. This comprehensive approach
+      not only enhances system reliability but also supports sustainable and cost-effective operations.
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 BEASystemCTC — All rights reserved.</p>
+  </footer>
+</body>
+</html>

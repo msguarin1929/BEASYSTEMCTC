@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us - BEASystemCTC</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    nav a {
+      margin: 0 0.5rem;
+      text-decoration: none;
+      font-weight: bold;
+      color: #065f46;
+      position: relative;
+      transition: color 0.3s ease;
+    }
+
+    nav a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -2px;
+      width: 100%;
+      height: 2px;
+      background-color: #065f46;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    nav a:hover {
+      color: #003d1d;
+    }
+
+    nav a:hover::after {
+      transform: scaleX(1);
+    }
+  </style>
+</head>
+<body class="bg-green-50 min-h-screen">
+
+  <!-- Header -->
+  <header class="flex justify-between items-center p-4 bg-white shadow-md flex-wrap">
+    <div class="flex items-center mb-2 md:mb-0">
+      <img src="assets/logo.png" alt="BEASystemCTC Logo" class="w-16 h-auto mr-4" />
+      <h1 class="text-2xl font-bold text-green-800">BEASystemCTC</h1>
+    </div>
+    <nav class="bg-green-100 p-2 rounded-md text-sm">
+      <a href="Index.html">Welcome</a>
+      <a href="Home.html">Home</a>
+      <a href="ProjectPortfolio.html">Projects</a>
+      <a href="ContactUs.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="p-6">
+    <section class="max-w-4xl mx-auto mb-10">
+      <h2 class="text-3xl font-bold text-center text-green-800 mb-6">About Us</h2>
+
+      <div class="mb-6">
+        <h3 class="text-2xl font-semibold text-green-700 mb-2">Who We Are</h3>
+        <p class="text-gray-700">
+          BEASystemCTC is a team of industry experts specializing in Civil Engineering, Architecture, Construction, and Plant Maintenance in Automation and Safety.
+        </p>
+      </div>
+
+      <div class="mb-6">
+        <h3 class="text-2xl font-semibold text-green-700 mb-2">What We Do</h3>
+        <p class="text-gray-700">
+          Our services include Instrumentation and Control (I&C) and HVAC installation, commissioning, and maintenance. We execute preventive and corrective strategies to ensure optimal performance and system safety.
+        </p>
+      </div>
+
+      <div class="mb-10">
+        <h3 class="text-2xl font-semibold text-green-700 mb-2">Our Commitment</h3>
+        <p class="text-gray-700">
+          We are committed to sustainable solutions, smart technologies, and cost-effective project delivery that ensures high performance and client satisfaction.
+        </p>
+      </div>
+
+      <h3 class="text-2xl font-semibold text-green-700 mb-4">Key Personnel</h3>
+
+      <div class="grid md:grid-cols-2 gap-6 text-gray-700">
+        <!-- Each personnel block -->
+        <div class="bg-white rounded-xl shadow-lg p-4 flex items-center space-x-4 transition transform hover:shadow-2xl hover:scale-105 duration-300">
+          <img src="assets/pericles.png" class="w-24 h-24 rounded-full" />
+          <div>
+            <p class="font-bold text-green-800">Dr. Pericles M. Mallari</p>
+            <p>President, CEO</p>
+            <p>Email: pericles.mallari@gmail.com</p>
+            <p>Phone: 09209381942 / 09173199900</p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-lg p-4 flex items-center space-x-4 transition transform hover:shadow-2xl hover:scale-105 duration-300">
+          <img src="assets/sapnu.png" class="w-24 h-24 rounded-full" />
+          <div>
+            <p class="font-bold text-green-800">Engr. Engracio A. Sapnu Jr.</p>
+            <p>VP Finance</p>
+            <p>Email: saint.jsbuilders@gmail.com</p>
+            <p>Phone: 09175009822 / 9234669898</p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-lg p-4 flex items-center space-x-4 transition transform hover:shadow-2xl hover:scale-105 duration-300">
+          <img src="assets/manuel.png" class="w-24 h-24 rounded-full" />
+          <div>
+            <p class="font-bold text-green-800">Manuel S. Guarin</p>
+            <p>VP Operation</p>
+            <p>Email: msguarin1929@gmail.com</p>
+            <p>Phone: 09956101380</p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-lg p-4 flex items-center space-x-4 transition transform hover:shadow-2xl hover:scale-105 duration-300">
+          <img src="assets/rhys.png" class="w-24 h-24 rounded-full" />
+          <div>
+            <p class="font-bold text-green-800">Arch. Rhys Simon V. Guarin</p>
+            <p>Planning and Design Head</p>
+            <p>Email: rhyssvg@gmail.com</p>
+            <p>Phone: 09175169673</p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-lg p-4 flex items-center space-x-4 transition transform hover:shadow-2xl hover:scale-105 duration-300">
+          <img src="assets/tamie.png" class="w-24 h-24 rounded-full" />
+          <div>
+            <p class="font-bold text-green-800">Tamie S. Tolentino</p>
+            <p>Administrator</p>
+            <p>Email: tamietolentino1@gmail.com</p>
+            <p>Phone: 09173115955</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-green-100 text-green-800 text-center py-4 text-sm mt-10">
+    <p>&copy; 2025 BEASystemCTC — All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
